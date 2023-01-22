@@ -145,10 +145,13 @@
   border-radius: 6px;
   background-color: transparent;
   padding: 5px;
-  width: 70%;
+  width: 60%;
   color: white;
-  margin: 5px;
+  margin: 20px;
   transition: 0.5s;
+}
+.project .cat .coldivC {
+  padding: 5px;
 }
 .project .cat .active {
   background-color: #0eff52;
@@ -165,9 +168,6 @@
 }
 .project #line {
   border-bottom: 2px solid rgba(14, 255, 82, 0.5);
-  width: 80%;
-  margin: auto;
-  margin-top: 10px;
 }
 
 ::-webkit-scrollbar {

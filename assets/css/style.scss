@@ -162,10 +162,13 @@ $light: #6c757d;
             border-radius: 6px;
             background-color: transparent;
             padding: 5px;
-            width: 70%;
+            width: 60%;
             color: $white;
-            margin: 5px;
+            margin: 20px;
             transition: 0.5s;
+        }
+        .coldivC {
+            padding: 5px;
         }
         .active {
             background-color: $primary;
@@ -183,9 +186,9 @@ $light: #6c757d;
     }
     #line {
         border-bottom: 2px solid rgba($color: $primary, $alpha: 0.5);
-        width: 80%;
-        margin: auto;
-        margin-top: 10px;
+        // width: 80%;
+        // margin: auto;
+        // margin-top: 10px;
     }
     padding-bottom: 50px;
 }
