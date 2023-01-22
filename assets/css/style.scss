@@ -1,0 +1,292 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// $primary: rgb(255, 225, 0);
+// Include any default variable overrides here (though functions won't be available)
+$primary: #0eff52;
+$dark: black;
+$white: white;
+$light: #6c757d;
+.header {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: unset;
+}
+
+.navP {
+    background-color: rgba($color: $dark, $alpha: 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    a {
+        color: $white;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        font-family: "Cambria Math";
+        font-size: 17px;
+    }
+    .navbar-brand {
+        margin-left: 70px;
+    }
+    .navbar-nav {
+        margin-left: 350px;
+    }
+    @mixin nav-linkActive {
+        transition: 0.5s;
+        background-color: rgba($color: $primary, $alpha: 0.5);
+        border-radius: 6px;
+        padding: 10px;
+        span {
+            border-bottom: 2px solid $primary;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .active {
+        @include nav-linkActive;
+    }
+    .nav-link:hover {
+        @include nav-linkActive;
+    }
+
+    .active:hover {
+        background-color: rgba($color: $primary, $alpha: 0.6);
+    }
+}
+
+.home {
+    padding-top: 50px;
+    // margin-bottom: 50px;
+    .row {
+        padding: 10px;
+    }
+    .colP {
+        margin-bottom: 70px;
+    }
+    h1 {
+        color: $primary;
+        font-size: 70px;
+    }
+    p {
+        color: $white;
+        font-size: 20px;
+        font-family: "Bell MT";
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    a {
+        background-color: $primary;
+        background-color: $primary;
+        border-radius: 15px;
+        padding: 7px;
+        font-size: 25px;
+        font-family: "Californian FB";
+        border: 2px solid white;
+        color: $dark;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: 0.5s;
+    }
+    a:hover {
+        box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
+    }
+}
+.about-us {
+    background-color: $dark;
+    padding: 25px;
+    h1 {
+        color: $primary;
+        font-family: "Bell MT";
+        span {
+            color: $white;
+        }
+    }
+    h3 {
+        color: $white;
+        font-family: "Bell MT";
+        margin-top: 15px;
+    }
+    p {
+        margin-top: 35px;
+        font-family: "Bell MT";
+        font-size: 25px;
+    }
+    img {
+        width: 100%;
+    }
+}
+@mixin service {
+    background-image: linear-gradient(
+        to right,
+        #00e458,
+        #00ba4c,
+        #00913e,
+        #016a30,
+        #074521,
+        #003622,
+        #00261e,
+        #001815,
+        #021517,
+        #071116,
+        #0b0e12,
+        #0b0b0b
+    );
+    h1 {
+        font-family: "Bell MT";
+        padding-top: 25px;
+    }
+    padding-top: 35px;
+
+    p {
+        color: $white;
+        padding-top: 25px;
+        font-size: 25px;
+        font-family: "Californian FB";
+    }
+    padding-bottom: 50px;
+    border-bottom: 4px solid $primary;
+}
+.service {
+    @include service;
+}
+.project {
+    background-color: $dark;
+    .cat {
+        button {
+            border: 2px solid $primary;
+            border-radius: 6px;
+            background-color: transparent;
+            padding: 5px;
+            width: 70%;
+            color: $white;
+            margin: 5px;
+            transition: 0.5s;
+        }
+        .active {
+            background-color: $primary;
+            color: $dark;
+            border: 2px solid $white;
+            border-radius: 6px;
+        }
+        button:hover {
+            background-color: $primary;
+            color: $dark;
+            border: 2px solid $white;
+            border-radius: 6px;
+            box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
+        }
+    }
+    #line {
+        border-bottom: 2px solid rgba($color: $primary, $alpha: 0.5);
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    padding-bottom: 50px;
+}
+// .service2 {
+//     @include service;
+// }
+// .service3 {
+//     @include service;
+// }
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(23, 82, 23);
+    // border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba($color: $primary, $alpha: 0.8);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+}
+@media screen and(max-width:660px) {
+    .navP {
+        .navbar-brand {
+            margin-left: initial;
+        }
+    }
+}
+@media screen and(max-width:1060px) {
+    .navP {
+        .navbar-nav {
+            margin-left: 250px;
+        }
+    }
+}
+@media screen and(max-width:992px) {
+    .navP {
+        .navbar-nav {
+            margin-left: initial;
+        }
+    }
+    @mixin para_img {
+        img {
+            width: 60%;
+            margin-left: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .about-us {
+        @include para_img;
+    }
+    .service {
+        @include para_img;
+    }
+    // .service2 {
+    //     @include para_img;
+    // }
+    // .service3 {
+    //     @include para_img;
+    // }
+}
+$navbar-dark-color: rgba($white, 0.55);
+$navbar-dark-hover-color: rgba($white, 0.75);
+$navbar-dark-active-color: $white;
+$navbar-dark-disabled-color: rgba($white, 0.25);
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color: rgba($white, 0.1);
+
+$navbar-light-color: rgba($primary, 0.55);
+$navbar-light-hover-color: rgba($primary, 0.7);
+$navbar-light-active-color: rgba($white, 0.9);
+$navbar-light-disabled-color: rgba($primary, 0.3);
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba($primary, 0.1);
+
+$navbar-light-brand-color: $navbar-light-active-color;
+$navbar-light-brand-hover-color: $navbar-light-active-color;
+$navbar-dark-brand-color: $navbar-dark-active-color;
+// $navbar-dark-brand-hover-color: $navbar-dark-active-color;
+
+// $nav-tabs-link-active-bg: $primary;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+) !default;
+
+// Then add additional custom code here
