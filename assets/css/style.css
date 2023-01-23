@@ -187,6 +187,11 @@
   position: relative;
   overflow: hidden;
 }
+.project .projRow .divimgP:hover img {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  transition-property: all;
+}
 .project .projRow .portfolio-info {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -201,13 +206,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   opacity: 1;
 }
 .project .projRow .portfolio-info .caption h4, .project .projRow .portfolio-info .caption .h4,
 .project .projRow .portfolio-info .caption h3,
 .project .projRow .portfolio-info .caption .h3 {
   font-family: "Californian FB";
+}
+.project .projRow .portfolio-info .caption a {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.5s;
+}
+.project .projRow .portfolio-info .caption a:hover {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  transition-property: all;
 }
 .project .divMore {
   margin-top: 10px;
@@ -219,6 +233,58 @@
   border: 2px dashed #0eff52;
   border-radius: 6px;
   color: #0eff52;
+  padding: 5px 15px;
+  transition: 0.5s;
+}
+.project .divMore button:hover {
+  background-color: #0eff52;
+  color: white;
+  box-shadow: 5px 2px 51px 2px rgba(14, 255, 82, 0.93);
+  border: 2px dashed white;
+}
+
+.contact-us {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+.contact-us .contactRow {
+  padding-top: 50px;
+  width: 70%;
+}
+.contact-us .contactRow input,
+.contact-us .contactRow textarea,
+.contact-us .contactRow button {
+  margin: 5px;
+  background-color: transparent;
+  border: 4px solid #0eff52;
+  color: white;
+  width: 100%;
+}
+.contact-us .contactRow input::-moz-placeholder, .contact-us .contactRow textarea::-moz-placeholder {
+  color: white;
+}
+.contact-us .contactRow input:-ms-input-placeholder, .contact-us .contactRow textarea:-ms-input-placeholder {
+  color: white;
+}
+.contact-us .contactRow input::placeholder,
+.contact-us .contactRow textarea::placeholder {
+  color: white;
+}
+.contact-us .line-dashd {
+  padding: 25px 0px;
+  border-bottom: 4px dashed #0eff52;
+}
+.contact-us .copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+}
+.contact-us .copyright span {
+  color: #0eff52;
+}
+.contact-us .copyright span:nth-child(1) {
+  padding: 0px 5px;
 }
 
 ::-webkit-scrollbar {
