@@ -300,6 +300,9 @@ $font-family2: "Bell MT";
             width: 100%;
             font-family: $font-family1;
         }
+        textarea {
+            resize: none;
+        }
         input::placeholder,
         textarea::placeholder {
             color: $white;
@@ -314,7 +317,9 @@ $font-family2: "Bell MT";
         justify-content: center;
         color: $white;
         padding: 15px;
+        padding-top: 25px;
         font-family: $font-family1;
+        font-size: 20px;
         span {
             color: $primary;
         }
@@ -331,6 +336,7 @@ $font-family2: "Bell MT";
             font-family: $font-family1;
         }
         .SocialIcon {
+            padding-top: 25px;
             .divIocn {
                 width: 50px;
                 height: 50px;
@@ -352,6 +358,7 @@ $font-family2: "Bell MT";
                 border: 2px solid $white;
             }
             .divLocalisation {
+                padding-top: 25px;
                 .divIocn {
                     // width: 60px;
                 }
