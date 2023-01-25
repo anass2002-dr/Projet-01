@@ -125,6 +125,9 @@
   padding-bottom: 50px;
   border-bottom: 4px solid #0eff52;
 }
+.service .row {
+  padding-left: 18px;
+}
 .service h1, .service .h1 {
   font-family: "Bell MT";
   padding-top: 25px;
@@ -146,7 +149,7 @@
   font-family: "Californian FB";
   background-color: transparent;
   padding: 5px;
-  width: 65%;
+  width: 75%;
   color: white;
   margin: 20px;
   transition: 0.5s;
