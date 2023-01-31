@@ -323,6 +323,11 @@ $font-family2: "Bell MT";
         padding-top: 25px;
         font-family: $font-family1;
         font-size: 20px;
+        img {
+            margin-top: -15px;
+            padding: 5px;
+            width: 5%;
+        }
         span {
             color: $primary;
         }
