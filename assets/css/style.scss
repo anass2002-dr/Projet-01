@@ -10,6 +10,17 @@ $light: #6c757d;
 $font-family1: "Californian FB";
 $font-family2: "Bell MT";
 
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
 .header {
     background-image: url(../img/background.jpg);
     background-size: cover;
