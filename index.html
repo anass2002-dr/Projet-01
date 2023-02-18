@@ -12,6 +12,10 @@
 </head>
 <body>
   <div class="header">
+    <video autoplay loop muted plays-inline class="vd">
+      <source src="assets/videos/video.mp4">
+    </video>
+
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navP bg-opacity-75 fixed-top">
         <div class="container-fluid">
@@ -35,11 +39,12 @@
     </nav>
     <!-- home -->
     <section class="home" id="home">
+      
           <div class="container">
             <div class="row">
-              <div class="col-12 col-lg-6 colP">
-                <h1>Full stack development</h1>
-                <p>
+              <div class="col-12 colP">
+                <h1 class="">Full stack development</h1>
+                <p class="">
                   A full-stack developer is a software engineer who is proficient in both front-end and back-end development. 
                   This means that they have a strong understanding of how to build and integrate the various components that make up a complete web application, 
                   from the client-side user interface to the server-side databases and APIs. A full-stack developer is comfortable working with technologies such as HTML, CSS, JavaScript, React, Angular, Vue.js,
@@ -47,13 +52,40 @@
                   they should have a good understanding of web development principles, including HTTP, REST, and databases, as well as software development concepts such as version control (e.g. Git), testing, and deployment. 
                   The goal of a full-stack developer is to create an end-to-end user experience that is both aesthetically pleasing and functional.
                 </p>
-                <a href="#">Get Started
-                <i class="bi bi-arrow-right"></i>
-                </a>
+                <div class="home-btn">
+                  <a href="#" class="">Get Started
+                    <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
               </div>
-              <div class="col-12 col-lg-6">
+              <!-- <div class="col-12 col-lg-6">
                 <img src="assets/img/tow people.png" alt="" srcset="" style="width:100% ;">
+              </div> -->
+            </div>
+            <div class="icons-home p-4">
+              <div class="rounded-circle divIocn-home divIcon">
+               <a href=""><i class="bi bi-facebook"></i></a>
               </div>
+              
+              <div class="rounded-circle divIocn-home divIcon">
+               <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+              
+              <div class="rounded-circle divIocn-home divIcon">
+               <a href=""><i class="bi bi-twitter"></i></a>
+              </div>
+            
+
+
+            
+              <div class="rounded-circle divIocn-home divIcon">
+               <a href=""><i class="bi bi-envelope"></i></a>
+              </div>
+              
+              <div class="rounded-circle divIocn-home divIocn">
+               <a href=""><i class="bi bi-whatsapp"></i></a>
+             </div> 
+
             </div>
           </div>
     </section>
@@ -61,25 +93,24 @@
   <!-- about us -->
   <section class="about-us" id="about-us">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="500" 
+        data-aos-easing="ease-in-sine">
           <div class="col-lg-6 col-12">
               <h1>Welcome to Anass<span>Co</span></h1>
-              <h3>We Are Creative Agency That Create Beautiful Websites</h3>
+              <h3></h3>
               <p class="text-secondary">
-                  Anlico is a company that specializes in providing a variety of digital services to its clients.
-                  These services can include web design and development, social media management,
-                  search engine optimization (SEO), content creation, email marketing, and more.
-                  Digital agencies work with businesses of all sizes to help them achieve their online marketing and sales goals.
-                  They use a variety of tools and techniques to create effective online campaigns that engage and convert customers.
-                  Digital agencies often have teams of skilled professionals,
-                  including designers, developers, marketers, and strategists, who work together to deliver results for their clients. 
+                Welcome to my website! My name is Anass, and I'm a 1-year-old full-stack developer from Morocco.
+                I hold a diploma in IT from Ismontic Tetouane and have a year of experience in the field.
+                I consider myself a master in each programming language, including HTML, CSS, Bootstrap, JS, PHP, C#, and the Laravel framework.
+                In addition, I have extensive knowledge in server languages like SQL and MySQL. I also have a flair for graphic design, 
+                which allows me to create visually stunning websites. With my skills and expertise, I can help you build a responsive and intuitive website that meets your needs.
+                Please feel free to browse through my portfolio and contact me if you have any queries. Thank you for visiting my website!
               </p>
           </div>
-          <div class="col-lg-6 col-12"   data-aos="zoom-in"
-          data-aos-offset="300"
-          data-aos-duration="500" 
-          data-aos-easing="ease-in-sine">
-            <img src="assets/img/about_twoP.png" alt=""  srcset="">
+          <div class="col-lg-6 col-12">
+            <img src="assets/img/about_img3.png" alt=""  srcset="">
           </div>
         </div>
       </div>
@@ -87,7 +118,7 @@
   <!-- service 1 -->
   <section class="service" id="service">
     <div class="container">
-      <div class="row"  data-aos="fade-left"
+      <div class="row" data-aos="fade-up"
       data-aos-offset="300"
       data-aos-duration="500" 
       data-aos-easing="ease-in-sine">
@@ -111,7 +142,7 @@
   <!-- service 2 -->
   <section class="service" id="service2">
     <div class="container">
-      <div class="row"   data-aos="fade-left"
+      <div class="row" data-aos="fade-up"
       data-aos-offset="300"
       data-aos-duration="500" 
       data-aos-easing="ease-in-sine">
@@ -137,7 +168,7 @@
   <!-- service 3 -->
   <section class="service" id="service3">
     <div class="container">
-      <div class="row" data-aos="fade-left"
+      <div class="row" data-aos="fade-up"
       data-aos-offset="300"
       data-aos-duration="500" 
       data-aos-easing="ease-in-sine">

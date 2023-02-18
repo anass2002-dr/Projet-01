@@ -22,9 +22,18 @@ $font-family2: "Bell MT";
     }
 }
 .header {
-    background-image: url(../img/background.jpg);
+    // background-image: url(../img/background.jpg);
+    position: relative;
     background-size: cover;
     background-position: unset;
+}
+.vd {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .navP {
@@ -74,9 +83,23 @@ $font-family2: "Bell MT";
 
 .home {
     padding-top: 50px;
+    position: relative;
+    .icons-home {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        .divIocn-home {
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .divIocn-home:hover {
+            transform: scale(2);
+        }
+    }
     // margin-bottom: 50px;
     .row {
-        padding: 10px;
+        // padding: 10px;
+        padding: 73px;
     }
     .colP {
         margin-bottom: 70px;
@@ -84,34 +107,70 @@ $font-family2: "Bell MT";
     h1 {
         color: $primary;
         font-size: 70px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
     }
+
     p {
         color: $white;
         font-size: 20px;
         font-family: $font-family2;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        // margin-top: 30px;
+        // margin-bottom: 50px;
+        text-align: center;
+        margin: 32px;
     }
-    a {
-        background-color: $primary;
-        background-color: $primary;
-        border-radius: 15px;
-        padding: 7px;
-        font-size: 25px;
-        font-family: $font-family1;
-        border: 2px solid white;
-        color: $dark;
-        text-decoration: none;
-        padding-left: 20px;
-        padding-right: 20px;
-        transition: 0.5s;
+    // a {
+    //     background-color: $primary;
+    //     background-color: $primary;
+    //     border-radius: 15px;
+    //     padding: 7px;
+    //     font-size: 25px;
+    //     font-family: $font-family1;
+    //     border: 2px solid white;
+    //     color: $dark;
+    //     text-decoration: none;
+    //     padding-left: 20px;
+    //     padding-right: 20px;
+    //     transition: 0.5s;
+    //     box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
+    //     transition: transform 0.2s;
+    // }
+
+    .home-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 86px;
+        a {
+            background-color: $primary;
+            background-color: $primary;
+            border-radius: 15px;
+            padding: 7px;
+            font-size: 25px;
+            font-family: $font-family1;
+            border: 2px solid white;
+            color: $dark;
+            text-decoration: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: 0.5s;
+            box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
+            transition: transform 0.2s;
+        }
+        a:hover {
+            transform: scale(1.5);
+        }
     }
-    a:hover {
-        box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
-    }
+    // a:hover {
+    // }
 }
 .about-us {
-    background-color: $dark;
+    // background-color: $dark;
+    background-image: url(../img//background.jpg);
+    background-size: cover;
+    background-position: unset;
     padding: 25px;
     h1 {
         color: $primary;
@@ -128,10 +187,11 @@ $font-family2: "Bell MT";
     p {
         margin-top: 35px;
         font-family: $font-family2;
-        font-size: 25px;
+        font-size: 20px;
     }
     img {
-        width: 100%;
+        width: 50%;
+        margin: 98px;
     }
 }
 @mixin service {
@@ -337,7 +397,6 @@ $font-family2: "Bell MT";
         img {
             margin-top: -15px;
             padding: 5px;
-            width: 5%;
         }
         span {
             color: $primary;
@@ -422,6 +481,9 @@ $font-family2: "Bell MT";
             margin-left: initial;
         }
     }
+    .icons-home {
+        display: none;
+    }
 }
 @media screen and(max-width:1060px) {
     .navP {
@@ -436,13 +498,24 @@ $font-family2: "Bell MT";
             margin-left: initial;
         }
     }
-    @mixin para_img {
-        img {
-            width: 60%;
-            margin-left: 50px;
+    .home {
+        h1 {
+            font-size: 30px;
+        }
+        .row {
+            padding: 0px;
         }
         p {
-            font-size: 20px;
+            font-size: 15px;
+        }
+    }
+    @mixin para_img {
+        img {
+            width: 40%;
+            margin-left: 96px;
+        }
+        p {
+            font-size: 15px;
         }
     }
     .about-us {

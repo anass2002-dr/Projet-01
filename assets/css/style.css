@@ -22,9 +22,18 @@
   }
 }
 .header {
-  background-image: url(../img/background.jpg);
+  position: relative;
   background-size: cover;
   background-position: unset;
+}
+
+.vd {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .navP {
@@ -80,26 +89,47 @@
 
 .home {
   padding-top: 50px;
+  position: relative;
+}
+.home .icons-home {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+.home .icons-home .divIocn-home {
+  padding: 15px;
+  transition: transform 0.2s;
+}
+.home .icons-home .divIocn-home:hover {
+  transform: scale(2);
 }
 .home .row {
-  padding: 10px;
-  padding-top: 30px;
+  padding: 73px;
 }
 .home .colP {
   margin-bottom: 70px;
 }
 .home h1, .home .h1 {
   color: #0eff52;
-  /* font-size: 70px; */
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 .home p {
   color: white;
   font-size: 20px;
   font-family: "Bell MT";
-  margin-top: 30px;
-  margin-bottom: 50px;
+  text-align: center;
+  margin: 32px;
 }
-.home a {
+.home .home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 86px;
+}
+.home .home-btn a {
   background-color: #0eff52;
   background-color: #0eff52;
   border-radius: 15px;
@@ -112,13 +142,17 @@
   padding-left: 20px;
   padding-right: 20px;
   transition: 0.5s;
-}
-.home a:hover {
   box-shadow: 5px 2px 51px 2px rgba(14, 255, 82, 0.93);
+  transition: transform 0.2s;
+}
+.home .home-btn a:hover {
+  transform: scale(1.5);
 }
 
 .about-us {
-  background-color: black;
+  background-image: url(../img//background.jpg);
+  background-size: cover;
+  background-position: unset;
   padding: 25px;
 }
 .about-us h1, .about-us .h1 {
@@ -136,10 +170,11 @@
 .about-us p {
   margin-top: 35px;
   font-family: "Bell MT";
-  font-size: 25px;
+  font-size: 20px;
 }
 .about-us img {
-  width: 100%;
+  width: 50%;
+  margin: 98px;
 }
 
 .service {
@@ -318,7 +353,6 @@
 .contact-us .copyright img {
   margin-top: -15px;
   padding: 5px;
-  width: 5%;
 }
 .contact-us .copyright span {
   color: #0eff52;
@@ -391,6 +425,9 @@
   .navP .navbar-brand {
     margin-left: initial;
   }
+  .icons-home {
+    display: none;
+  }
 }
 @media screen and (max-width: 1060px) {
   .navP .navbar-nav {
@@ -401,19 +438,28 @@
   .navP .navbar-nav {
     margin-left: initial;
   }
+  .home h1, .home .h1 {
+    font-size: 30px;
+  }
+  .home .row {
+    padding: 0px;
+  }
+  .home p {
+    font-size: 15px;
+  }
   .about-us img {
-    width: 60%;
-    margin-left: 50px;
+    width: 40%;
+    margin-left: 96px;
   }
   .about-us p {
-    font-size: 20px;
+    font-size: 15px;
   }
   .service img {
-    width: 60%;
-    margin-left: 50px;
+    width: 40%;
+    margin-left: 96px;
   }
   .service p {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 /*!
