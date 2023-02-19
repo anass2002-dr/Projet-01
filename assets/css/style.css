@@ -89,7 +89,11 @@
 
 .home {
   padding-top: 50px;
+  height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .home .icons-home {
   position: absolute;
@@ -193,8 +197,10 @@
 .service p {
   color: white;
   padding-top: 25px;
-  font-size: 25px;
   font-family: "Californian FB";
+}
+.service img {
+  width: 70%;
 }
 
 .project {

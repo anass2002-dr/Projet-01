@@ -83,7 +83,11 @@ $font-family2: "Bell MT";
 
 .home {
     padding-top: 50px;
+    height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .icons-home {
         position: absolute;
         right: 0;
@@ -222,8 +226,11 @@ $font-family2: "Bell MT";
     p {
         color: $white;
         padding-top: 25px;
-        font-size: 25px;
+        // font-size: 25px;
         font-family: $font-family1;
+    }
+    img {
+        width: 70%;
     }
     padding-bottom: 50px;
     border-bottom: 4px solid $primary;

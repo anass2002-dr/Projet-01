@@ -43,7 +43,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12 colP">
-                <h1 class="">Full stack development</h1>
+                <h1 class="">I'm&nbsp;<span class="auto-type"></span></h1>
                 <p class="">
                   A full-stack developer is a software engineer who is proficient in both front-end and back-end development. 
                   This means that they have a strong understanding of how to build and integrate the various components that make up a complete web application, 
@@ -117,6 +117,7 @@
   </section>
   <!-- service 1 -->
   <section class="service" id="service">
+    
     <div class="container">
       <div class="row" data-aos="fade-up"
       data-aos-offset="300"
@@ -388,8 +389,15 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/code.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       AOS.init();
+      var typed = new Typed('.auto-type', {
+        strings:["designer","Front-end developer","back-end developer"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true
+      });
     </script>
   </body>
 </html>
