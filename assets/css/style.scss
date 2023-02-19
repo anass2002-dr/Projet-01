@@ -148,25 +148,35 @@ $font-family2: "Bell MT";
         align-items: center;
         margin-top: 86px;
         a {
-            background-color: $primary;
-            background-color: $primary;
-            border-radius: 15px;
+            // background-color: $primary;
+            // background-color: $primary;
+            // border-radius: 15px;
             padding: 7px;
             font-size: 25px;
             font-family: $font-family1;
-            border: 2px solid white;
-            color: $dark;
+            // border: 2px solid white;
+            color: $white;
             text-decoration: none;
             padding-left: 20px;
             padding-right: 20px;
             transition: 0.5s;
-            box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
-            transition: transform 0.2s;
+            // box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
+            box-shadow: 4px 1px 34px 5px rgba(14, 255, 82, 0.61);
+            // transition: transform 0.2s;
+
+            transition: 0.5s;
+            // background-color: rgba(14, 255, 82, 0.5);
+            background-color: rgba($color: $primary, $alpha: 0.5);
+            border-radius: 13px;
+            padding: 13px;
         }
         a:hover {
-            transform: scale(1.5);
+            transform: scale(1.2);
+            background-color: rgba($color: $primary, $alpha: 0.8);
+            box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
         }
     }
+
     // a:hover {
     // }
 }
@@ -279,6 +289,50 @@ $font-family2: "Bell MT";
     .projRow {
         margin: auto;
         margin-left: 50px;
+        .row_view {
+            width: 80%;
+            margin: 7px;
+        }
+        .btn_view {
+            display: flex;
+            justify-content: center;
+            background-color: rgba($color: $primary, $alpha: 0.7);
+            border: 2px dashed $white;
+            border-radius: 5px;
+            margin: 5px;
+            width: 80%;
+            transition: 1s;
+            // box-shadow: 5px 2px 20px 2px rgb(14 255 82 / 93%);
+
+            span {
+                text-decoration: none;
+                text-align: center;
+                color: $white;
+            }
+            i {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                color: $white;
+            }
+        }
+        .btn_view:hover {
+            // box-shadow: 5px 2px 20px 2px rgb(14 255 82 / 93%);
+            background-color: $primary;
+            color: $dark;
+            // border: 2px solid $white;
+            border-radius: 6px;
+            box-shadow: 5px 2px 51px 2px rgb(14 255 82 / 93%);
+            animation: border 2s infinite;
+        }
+        @keyframes border {
+            0% {
+                border: 2px dashed $white;
+            }
+            100% {
+                border: 2px solid $white;
+            }
+        }
         img {
             width: 100%;
             object-fit: contain;
