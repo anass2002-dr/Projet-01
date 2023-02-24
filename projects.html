@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo1.png" type="image/icon type">
+    <title>AnassCo-Projects</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="center" id="loader">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navP bg-opacity-75 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/img/logo1.png" alt="" srcset="" class=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="btn-collapse-m" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html"><span>Home</span></a>
+              
+              <a class="nav-link" href="about-us.html"><span>About Me</span></a>
+              <a class="nav-link" href="service.html"><span>My Service</span></a>
+              <a class="nav-link active" href="projects.html"><span>My Project</span></a>
+              <a class="nav-link" href="contact-us.html"><span>Contact Me</span></a>
+            </div>
+          </div>
+        </div>
+          
+    </nav>
+
+    <section class="project bg-black" id="project">
+        <div class="container">
+          <div class="row p-5 cat">
+            <div class="col-lg-3 col-6 coldivC"><button id="all" class="active" onclick="d_portfolio('all')">All</button></div>
+            <div class="col-lg-3 col-6 coldivC"><button id="web" onclick="d_portfolio('web')">Web Dev</button></div>
+            <div class="col-lg-3 col-6 coldivC"><button id="mobile" onclick="d_portfolio('mobile')">Mobiel Dev</button></div>
+            <div class="col-lg-3 col-6 coldivC"><button id="desktop" onclick="d_portfolio('desktop')">Desktop</button> </div>
+            <div class="col-12" id="line"></div>
+            
+          </div>
+        </div>
+        <div class="container-fluid"data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="500" 
+        data-aos-easing="ease-in-sine">
+          <div class="row projRow">
+            <div class="col-lg-4 col-sm-6 col-12 collapse show desktop">
+              <div class="divimgP">
+                <img src="assets/img/school.jpg" alt="" srcset="">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <a href="#">
+                      <h4>School Management</h4>
+                      <h3>Web Appliction</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_view">
+                <div class="col-6">
+                  <a href="" class="btn btn_view" data-bs-toggle="modal" data-bs-target="#modal_img" onclick="show_portfolio('School_manage',7,0,'.jpg')"><span>View</span></a>
+    
+                </div>
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><i class="bi bi-github"></i> <span>GitHub</span></a>
+    
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 collapse show web">
+              <div class="divimgP">
+                <img src="assets/img/food.jpg" alt="" srcset="">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <a href="resturant-img.html">
+                      <h4>Resturant Service</h4>
+                      <h3>Mobile Appliction</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_view">
+                <div class="col-6">
+                  <a href="https://resturant-anassco.netlify.app/" target="_blank" class="btn btn_view"><span>View</span></a>
+    
+                </div>
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><i class="bi bi-github"></i> <span>GitHub</span></a>
+    
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 collapse show web">
+              <div class="divimgP">
+                <img src="assets/img/camion.jpg" alt="" srcset="">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <a href="#">
+                      <h4>Truck Management</h4>
+                      <h3>Web Appliction</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_view">
+                <div class="col-6">
+                  <a href="error-page.html" class="btn btn_view"><span>View</span></a>
+    
+                </div>
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><i class="bi bi-github"></i> <span>GitHub</span></a>
+    
+                </div>
+              </div>
+    
+            </div>
+    
+            <div class="col-lg-4 col-sm-6 col-12 collapse show mobile">
+              <div class="divimgP">
+                <img src="assets/img/food2.jpg" alt="" srcset="">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <a href="#">
+                      <h4>Cafe Service</h4>
+                      <h3>Mobile Appliction</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_view">
+                <div class="col-6">
+                  <a href="error-page.html" class="btn btn_view""><span>View</span></a>
+    
+                </div>
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><i class="bi bi-github"></i> <span>GitHub</span></a>
+    
+                </div>
+              </div>
+    
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 collapse show desktop">
+              <div class="divimgP">
+                <img src="assets/img/hair_management.jpg" alt="" srcset="">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <a href="#">
+                      <h4>Hair Management</h4>
+                      <h3>Desktop Appliction</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_view">
+                <div class="col-6">
+                  <a href="" class="btn btn_view" data-bs-toggle="modal" data-bs-target="#modal_img" onclick="show_portfolio('hair_manage',6,0,'.jpg')"><span>View</span></a>
+    
+                </div>
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><i class="bi bi-github"></i> <span>GitHub</span></a>
+    
+                </div>
+              </div>
+    
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12 collapse show web">
+              <div class="divimgP">
+                <img src="assets/img/agence.jpg" alt="" srcset="">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <a href="#">
+                      <h4>Agency Service</h4>
+                      <h3>Web Appliction</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row_view">
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><span>View</span></a>
+    
+                </div>
+                <div class="col-6">
+                  <a href="" class="btn btn_view"><i class="bi bi-github"></i> <span>GitHub</span></a>
+    
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-12 divMore">
+              <button>Show More
+                  <i class="bi bi-caret-down ps-3"></i>
+    
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!--model-->
+      
+<div class="modal fade" id="modal_img" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators" id="carousel_button">
+            
+          </div>
+          <div class="carousel-inner" id="carousel_inner">
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- contact-us -->
+    <section class="contact-us" id="contact-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <form action="">
+                <div class="row contactRow">
+                  <div class="col-12">
+                    <input type="text" name="email" id="email" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" id="messege" placeholder="Messege" cols="30" rows="10" class="form-control" ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Let's Talk</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="row SocialRow">
+                <div class="col-12">
+                  <h1>Contact Us</h1>
+                </div>
+                <div class="col-12">
+                  <div class="row SocialIcon">
+                    <div class="col-12 d-flex justify-content-center p4">
+                      <div class="rounded-circle divIocn">
+                       <a href=""><i class="bi bi-facebook"></i></a>
+                      </div>
+                      
+                      <div class="rounded-circle divIocn">
+                       <a href=""><i class="bi bi-linkedin"></i></a>
+                      </div>
+                      
+                      <div class="rounded-circle divIocn">
+                       <a href=""><i class="bi bi-twitter"></i></a>
+                      </div>
+                    </div>
+    
+    
+                    <div class="col-12 d-flex justify-content-center p4">
+                      <div class="rounded-circle divIocn">
+                       <a href=""><i class="bi bi-envelope"></i></a>
+                      </div>
+                      
+                      <div class="rounded-circle divIocn">
+                       <a href=""><i class="bi bi-whatsapp"></i></a>
+                      </div>
+    
+                    </div>
+                    
+                    <div class="col-12 d-flex p4 divLocalisation">
+                      <div class="rounded-circle divIocn">
+                       <a href=""><i class="bi bi-geo-alt"></i></a>
+                      </div>
+                      <p> 2170 Broadway – Between W.76th and W.77th – New York, NY 10023</p>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line-dashd"></div>
+        <div class="copyright">
+          &nbsp;Copyright <span><i class="bi bi-c-circle"></i></span> 2023 created By <img src="assets/img/logo1.png" alt="" srcset="">
+        </div>
+      </section>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/code.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var loader=document.getElementById("loader");
+        window.addEventListener('load',()=>{
+            loader.style.display="none";
+        });
+      AOS.init();
+    </script>
+</body>
+</html>
