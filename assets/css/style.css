@@ -199,9 +199,6 @@ bodY {
 .home .icons-home .divIocn-home:hover {
   transform: scale(2);
 }
-.home .row {
-  padding: 73px;
-}
 .home .colP {
   margin-bottom: 70px;
 }
